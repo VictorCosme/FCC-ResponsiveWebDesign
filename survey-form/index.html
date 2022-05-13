@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link type="text/css" href="styles/general.css" rel="stylesheet">
+  <link type="text/css" href="styles/form.css" rel="stylesheet">
+  <link type="text/css" href="styles/header.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <title>Formulário de pesquisa</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 id="title">Formulário de pesquisa</h1>
+      <p id="description">Descrição bacana para um fomulário criado para <i lang="en">FreeCodeCamp</i>.</p>
+    </header>
+
+    <form action="#" method="post" target="_blank" id="survey-form">
+      <label for="name" id="name-label">Nome <span>*</span></label>
+      <input name="Nome" id="name" type="text" placeholder="Ex: José da Silva" required>
+
+      <br>
+
+      <label for="email" id="email-label">E-mail <span>*</span></label>
+      <input name="E-mail" id="email" type="email" placeholder="Ex: josesilva@gmail.com" required>
+
+      <br>
+
+      <label for="number" id="number-label">Idade <span>*</span></label>
+      <input name="Idade" id="number" type="number" min="18" max="100" placeholder="Ex: 18" required>
+
+      <br>
+
+      <label for="dropdown">Sexo <span>*</span></label>
+      <select id="dropdown" required>
+        <option value="Selecione"></option>
+        <option value="">Masculino</option>
+        <option>Feminino</option>
+        <option>Não-binário</option>
+        <option>Prefiro não responder</option>
+      </select>
+
+      <fieldset>
+        <legend>Senioridade</legend>
+        
+        <div>
+          <input type="radio" id="radio-junior" name="senioridade" value="Junior">
+          <label for=radio-junior>Júnior</label>
+        </div>
+
+        <div>
+          <input type="radio" id="radio-pleno" name="senioridade" value="Pleno">
+          <label for="radio-pleno">Pleno</label>
+        </div>
+
+        <div>
+          <input type="radio" id="radio-senior" name="senioridade" value="Senior">
+          <label for="radio-senior">Senior</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tecnologias as quais domina</legend>
+
+        <div>
+          <input id="checkbox-html" type="checkbox" value="HTML">
+          <label for="checkbox-html">HTML</label>
+        </div>
+
+        <div>
+          <input id="checkbox-css" type="checkbox" value="CSS">
+          <label for="checkbox-css">CSS</label>
+        </div>
+
+        <div>
+          <input id="checkbox-javascript" type="checkbox" value="JavaScript">
+          <label for="checkbox-javascript">JavaScript</label>
+        </div>
+
+        <div>
+          <input id="checkbox-python" type="checkbox" value="Python">
+          <label for="checkbox-python">Python</label>
+        </div>
+
+        <div>
+          <input id="checkbox-react" type="checkbox" value="React">
+          <label for="checkbox-react">React</label>
+        </div>
+
+        <div> 
+          <input id="checkbox-bootstrap" type="checkbox" value="Bootstrap">
+          <label for="checkbox-bootstrap">Bootstrap</label>
+        </div>
+      </fieldset>
+
+      <label for="textarea">Conte-nos mais sobre você</label>
+      <textarea id="textarea" name="mais-info" placeholder="Escreva aqui"></textarea>
+
+      <br>
+
+      <button id="submit" type="submit">Enviar</button>
+
+    </form>
+  </main>
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

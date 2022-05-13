@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  text-align: justify;
+  color: #444444;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(imagens/ilustracaoDeCapa.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  display: flex;
+}
+
+header h1 {
+  font-size: 5em;
+  font-family: 'Pacifico', cursive;
+  color: white;
+
+  border: solid 3px white;
+  padding: 5px;
+  margin: auto;
+
+  justify-self: center;
+  align-self: center;
+}
+  
+header p {
+  text-indent: 0;
+  font-size: 0.8em;
+  position: absolute;
+  left: 1vw;
+  top: 100vh;
+  margin: 0;
+}
+  
+main > section {
+  max-width: 640px;
+  margin: auto;
+}
+  
+h2 {
+  font-size: 2.5em;
+  font-family: 'Pacifico', cursive;
+  margin: 30px auto;
+}
+ 
+div {
+  display: flex;
+}
+
+div p {
+  margin-top: 0;
+}
+
+p {
+  font-size: 1em;
+  text-indent: 25px;
+  margin: 30px auto;
+}
+  
+figure {
+  width: 200px;
+  height: auto;
+  margin: 0;
+  margin-left: 30px;
+}
+
+img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+}
+ 
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
+}
+  
+blockquote {
+  font-size: 1.3em;
+  border-left: solid 2px black;
+  padding-left: 10px;
+}
+
+ul {
+  margin: 30px auto;
+}
+
+li {
+  margin: 10px auto;
+  padding: 0;
+}
+
+.link_as_a_button {
+  display: block;
+  max-width: 400px;
+  padding: 5px 0;
+  border-radius: 10px;
+  margin: 30px auto;
+  background-color: #386161;
+  
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+@media (max-width: 710px) {
+  main > section {
+    width: 90vw;
+  }
+
+  div {
+    display: block;
+  }
+
+  figure {
+    width: 90vw;
+    margin: 30px auto;
+  }
+
+  img {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  figcaption {
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  header h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 420px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+}

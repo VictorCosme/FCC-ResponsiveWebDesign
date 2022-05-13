@@ -1,0 +1,9 @@
+* {
+    font-family:  'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    color: #6F7482;
+}
+
+body {
+  background-color: rgba(169, 169, 169, 0.2);
+}

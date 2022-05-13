@@ -1,0 +1,108 @@
+form {
+    width: 90vw;
+    max-width: 30.125em;
+    padding: 0.625em;
+    margin: auto;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+    background-color: white;
+}
+
+form > * {
+    display: block;
+}
+
+/*LABEL*/
+@media (min-width: 510px) {
+form > label {
+    padding-left: 0.75em;
+}}
+
+span {color: red;}
+
+fieldset > label {
+    font-size: 0.875em;
+}
+
+/**/
+[type="text"], [type="email"], [type="number"], select, textarea {
+    margin: auto;
+    padding: 0.75em;
+    box-sizing: border-box;
+
+    background-color: #f8fafc;
+    border-radius: 0.3em;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+[type="text"], [type="email"], [type="number"], select {
+    width: 100%;
+    max-width: 28.75em;
+}
+
+textarea {
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 4.6em;
+}
+
+::placeholder {
+    font-size: 0.875em;
+    font-style: italic;
+    color: #B8BCCA;
+}
+
+/*FIELDSETS*/
+fieldset {
+    width: 100%;
+    max-width: 28.75em;
+    margin: 1.6em auto;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 485px) {
+    fieldset {
+        justify-content: left;
+    }
+}
+
+@media (max-width: 485px) {
+    fieldset {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 392px) {
+    fieldset {
+        flex-direction: column;
+    }
+}
+
+fieldset > div {
+    margin: auto 1em;
+
+}
+
+/*BUTTON*/
+button {
+    width: 100%;
+    max-width: 28.75em;
+    height: 2em;
+
+    margin: auto;
+
+    border-radius: 0.4em;
+    border-color: rgba(0, 0, 0, 0);
+
+    background-color: #0048D9;
+
+    color: white;
+}
+
+button:hover {
+    background-color: #002266;
+}
